@@ -7,4 +7,5 @@ Rails.application.routes.draw do
     post 'questions', to: 'users/registrations#create_question'
   end
   root to: "home#index"
+  resources :rooms, only: [:new, :create]
 end
