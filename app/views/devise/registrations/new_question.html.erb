@@ -1,0 +1,99 @@
+<h2>住所情報登録</h2>
+
+<%= form_for @question do |f| %>
+  <%= render "devise/shared/error_messages", resource: @question %>
+
+  <div class="field">
+    <div class="weight-bold-text">
+      理念
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.collection_select(:philosophy_id, Philosophy.all, :id, :name, {}, {class:"select-box", id:"philosophy"}) %>
+  </div>
+
+  <div class="field">
+    <div class="weight-bold-text">
+      好きな色
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.collection_select(:color_id, Color.all, :id, :name, {}, {class:"select-box", id:"color"}) %>
+  </div>
+
+  <div class="field">
+    <div class="weight-bold-text">
+      自分の特性
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.collection_select(:my_type_id, MyType.all, :id, :name, {}, {class:"select-box", id:"my_type"}) %>
+  </div>
+
+  <div class="field">
+    <div class="weight-bold-text">
+      好きなタイプ
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.collection_select(:like_type_id, LikeType.all, :id, :name, {}, {class:"select-box", id:"like_type"}) %>
+  </div>
+
+  <div class="field">
+    <div class="weight-bold-text">
+      出身
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.collection_select(:prefecture_id, Prefecture.all, :id, :name, {}, {class:"select-box", id:"prefecture"}) %>
+  </div>
+
+  <div class="field">
+    <div class="weight-bold-text">
+      在住
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.collection_select(:prefecture_id, Prefecture.all, :id, :name, {}, {class:"select-box", id:"prefecture"}) %>
+  </div>
+
+  <div class="field">
+    <div class="weight-bold-text">
+      好きな食べ物
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.collection_select(:food_id, Food.all, :id, :name, {}, {class:"select-box", id:"food"}) %>
+  </div>
+
+  <div class="field">
+    <div class="weight-bold-text">
+      趣味
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.collection_select(:hoby_id, Hoby.all, :id, :name, {}, {class:"select-box", id:"hoby"}) %>
+  </div>
+
+  <div class="field">
+    <div class="weight-bold-text">
+      好きな音楽
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.collection_select(:music_id, Music.all, :id, :name, {}, {class:"select-box", id:"music"}) %>
+  </div>
+
+  <div class="field">
+    <div class="weight-bold-text">
+      何にイライラするか
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.collection_select(:angry_id, Angry.all, :id, :name, {}, {class:"select-box", id:"angry"}) %>
+  </div>
+
+  <div class="field">
+    <div class="weight-bold-text">
+      何を改善したいか
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.collection_select(:improve_id, Improve.all, :id, :name, {}, {class:"select-box", id:"improve"}) %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Sign up" %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>

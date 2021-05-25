@@ -4,6 +4,41 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # before_action :configure_sign_up_params, only: [:create]
   # before_action :configure_account_update_params, only: [:update]
 
+  def new
+    @user = User.new
+  end
+
+  def create
+    @user = User.new(sign_up_params)
+     unless @user.valid?
+       render :new and return
+     end
+    session["devise.regist_data"] = {user: @user.attributes}
+    #binding.pry
+    session["devise.regist_data"][:user]["password"] = params[:user][:password]
+    #binding.pry
+    @question = @user.build_question
+    render :new_question
+  end
+
+  def create_question
+    @user = User.new(session["devise.regist_data"]["user"])
+    @question = Question.new(question_params)
+     unless @question.valid?
+       render :new_question and return
+     end
+    @user.build_question(@question.attributes)
+    @user.save
+    session["devise.regist_data"]["user"].clear
+    sign_in(:user, @user)
+  end
+ 
+  private
+ 
+  def question_params
+    params.require(:question).permit(:philosophy_id, :color_id, :my_type_id, :like_type_id, :prefecture_id, :food_id, :hoby_id, :music_id, :angry_id, :improve_id)
+  end
+ 
   # GET /resource/sign_up
   # def new
   #   super
