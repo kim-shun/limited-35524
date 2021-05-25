@@ -1,6 +1,8 @@
 <%= render "shared/second-header" %>
-<h2>ユーザー情報登録</h2>
 
+<div class="form-field">
+  <h2>ユーザー情報登録</h2>
+  <br>
 <%= form_for(@user, url: user_registration_path) do |f| %>
   <%= render "devise/shared/error_messages", resource: @user %>
 
@@ -8,11 +10,13 @@
     ニックネーム<br />
     <%= f.text_field :nickname %>
   </div>
+  <br>
 
   <div class="field">
     メールアドレス<br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
+  <br>
 
   <div class="field">
     パスワード
@@ -21,6 +25,7 @@
     <% end %><br />
     <%= f.password_field :password, autocomplete: "new-password" %>
   </div>
+  <br>
 
   <div class="field">
     パスワード（確認用）<br />
@@ -29,10 +34,11 @@
   <br>
 
    <div class="actions">
-    <%= f.submit "次のページへ" %>
+    <%= f.submit "次のページへ", class: 'action-btn' %>
   </div>
   <br>
 <% end %>
+</div>
 
 <%#= render "devise/shared/links" %>
 <%= render "shared/footer" %>

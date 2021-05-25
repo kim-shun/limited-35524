@@ -1,6 +1,7 @@
 <%= render "shared/second-header" %>
+<div class="form-field">
 <h2>パーソナリティー情報</h2>
-
+ <span>限られた選択肢の中から最も自分に当てはまる項目を選んでください</span>
 <%= form_for @question do |f| %>
   <%= render "devise/shared/error_messages", resource: @question %>
 
@@ -94,9 +95,10 @@
   </div>
 
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%= f.submit "Sign up", class: 'action-btn' %>
   </div>
 <% end %>
+</div>
 
 <%#= render "devise/shared/links" %>
 <%= render "shared/footer" %>
