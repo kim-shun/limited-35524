@@ -10,6 +10,6 @@ Rails.application.routes.draw do
   root to: "home#index"
   resources :users, only: [:edit, :update, :show]
   resources :rooms, only: [:new, :create] do
-    resources :messages only: [:index, :new, :create]
+    resources :messages, only: [:index, :new, :create]
   end
 end

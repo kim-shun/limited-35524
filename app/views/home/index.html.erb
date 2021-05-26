@@ -1,6 +1,20 @@
 <%= render "shared/header" %>
 
-<h1>トップページ</h1>
+<h1>Limited</h1>
+
+<div class='title-contents'>
+    <h2 class='service-title'>
+      「言葉選び」のコストを削減するチャットアプリ
+    </h2>
+    <p class='service-explain'>
+      限られた言葉しか選べない
+    </p>
+    <p class='service-explain'>
+      チャットアプリです
+    </p>
+</div>
+<br>
+
 <% if user_signed_in? %>
   <%= link_to(new_room_path, class: 'room-btn') do %>
     <span class='room-btn-text'>ルーム作成</span>
