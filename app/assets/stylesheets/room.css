@@ -60,6 +60,8 @@ li {
   color: #2c7cff;
   background-color: #ffffbb;
   border: 0;
+  font-size: 18px;
+  font-weight: bold;
 }
 .chat-room-form__field {
   margin-top: 30px;
