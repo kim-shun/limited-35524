@@ -95,3 +95,8 @@ span {
   padding: 16px 8px;
 }
 
+.page-heading{
+  text-decoration: none;
+  color: #2c7cff;
+}
+
