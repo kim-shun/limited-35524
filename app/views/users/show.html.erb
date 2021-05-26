@@ -1,0 +1,57 @@
+<%= render "shared/second-header" %>
+<div class="form-field">
+<div class="user__wrapper">
+  <h2 class="page-heading">
+    <%= link_to "#{@nickname}さんの情報", edit_user_path(current_user) %>
+  </h2>
+  <table class="table">
+    <tbody>
+      <tr>
+        <th class="table__col1">名前</th>
+        <td class="table__col2"><%= @nickname %></td>
+      </tr>
+      <tr>
+        <th class="table__col1">理念</th>
+        <td class="table__col2"><%= @philosophy %></td>
+      </tr>
+      <tr>
+        <th class="table__col1">好きな色</th>
+        <td class="table__col2"><%= @color %></td>
+      </tr>
+      <tr>
+        <th class="table__col1">自分の特性</th>
+        <td class="table__col2"><%= @my_type %></td>
+      </tr>
+      <tr>
+        <th class="table__col1">好きなタイプ</th>
+        <td class="table__col2"><%= @like_type %></td>
+      </tr>
+      <tr>
+        <th class="table__col1">出身</th>
+        <td class="table__col2"><%= @prefecture %></td>
+      </tr>
+      <tr>
+        <th class="table__col1">好きな食べ物</th>
+        <td class="table__col2"><%= @food %></td>
+      </tr>
+      <tr>
+        <th class="table__col1">趣味</th>
+        <td class="table__col2"><%= @hoby %></td>
+      </tr>
+      <tr>
+        <th class="table__col1">好きな音楽</th>
+        <td class="table__col2"><%= @music %></td>
+      </tr>
+      <tr>
+        <th class="table__col1">何に怒るか</th>
+        <td class="table__col2"><%= @angry %></td>
+      </tr>
+      <tr>
+        <th class="table__col1">改善したいこと</th>
+        <td class="table__col2"><%= @improve %></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+<%= render "shared/second-footer" %>

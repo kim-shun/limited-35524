@@ -11,7 +11,18 @@ class UsersController < ApplicationController
   end
 
   def show
-    
+    @user = User.find(params[:id])
+    @nickname = @user.nickname
+    @philosophy = @user.question.philosophy.name
+    @color = @user.question.color.name
+    @my_type = @user.question.my_type.name
+    @like_type = @user.question.like_type.name
+    @prefecture = @user.question.prefecture.name
+    @food = @user.question.food.name
+    @hoby = @user.question.hoby.name
+    @music = @user.question.music.name
+    @angry = @user.question.angry.name
+    @improve = @user.question.improve.name
   end
 
   private
