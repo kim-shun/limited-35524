@@ -128,15 +128,16 @@ select {
 }
 
 .room-btn {
-  width: 120px;
+  width: 150px;
   background: #ffffbb;
   text-align: center;
-  border-radius: 4%;
+  border-radius: 70%;
   bottom: 32px;
   right: 32px;
   position: fixed;
   padding: 15px;
   text-decoration: none;
+  border: 1px solid #2c7cff;
 }
 
 .room-btn-text {
@@ -144,4 +145,25 @@ select {
   display: block;
   font-size: 18px;
   margin-bottom: 5px;
+  font-weight: bold;
 }
+
+.field_with_errors {
+  display: contents;
+}
+
+.chat-room-btn {
+  width: 25vw;
+  background: #ffffbb;
+  color: #2c7cff;
+  text-align: center;
+  border-radius: 70%;
+  bottom: 32px;
+  right: 32px;
+  padding: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  border: 1px solid #2c7cff;
+}
+
