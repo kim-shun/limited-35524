@@ -49,4 +49,58 @@
   height: 10vh;
 }
 
+.second-header {
+  background-image: image-url('IMG_5024.jpeg');
+  width: 100%;
+  min-width: 800px;
+  height: 130px;
+  background-color:#ffffbb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-footer {
+  background-image: image-url('IMG_5024.jpeg');
+  width: 100vw;
+  padding: 2vh 15vw;
+  display: flex;
+  flex-direction: column;
+  background-color:#ffffbb;
+  height: 10vh;
+}
+
+.third-footer {
+  background-image: image-url('IMG_5024.jpeg');
+  width: 100vw;
+  padding: 2vh 15vw;
+  display: flex;
+  flex-direction: column;
+  background-color:#ffffbb;
+  height: 10vh;
+}
+
+
+.side-bar {
+  width: 300px;
+  height: 100vh;
+}
+.side-bar-header {
+  background-image: image-url('IMG_5024.jpeg');
+  height: 100px;
+  padding: 0 20px;
+  background-color: #ffffbb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rooms {
+  background-image: image-url('IMG_5024.jpeg');
+  background-color: #ffff99;
+  height: calc(100vh - 100px);
+  padding: 0 20px;
+  overflow: scroll;
+}
+
 

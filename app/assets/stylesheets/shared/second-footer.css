@@ -2,15 +2,6 @@
   box-sizing: border-box;
 }
 
-.second-footer {
-  width: 100vw;
-  padding: 2vh 15vw;
-  display: flex;
-  flex-direction: column;
-  background-color:#ffffbb;
-  height: 10vh;
-}
-
 .return-chat {
   text-decoration: none;
   color: #2c7cff;
