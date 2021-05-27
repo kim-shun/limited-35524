@@ -103,4 +103,27 @@
   overflow: scroll;
 }
 
+.users{
+  min-height: calc(100vh - 161px);
+  overflow: scroll;
+}
+
+.home-table{
+  border-collapse: collapse;
+  margin-bottom: 32px;
+  width: 50vw;
+}
+
+.home-table__col2{
+  text-align: center;
+  border: 1px solid #2c7cff;
+  border-collapse: collapse;
+  width: 70%;
+  padding: 16px 8px;
+}
+
+.home-user {
+  text-decoration: none;
+  color: #2c7cff;
+}
 

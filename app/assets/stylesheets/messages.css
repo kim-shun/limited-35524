@@ -4,7 +4,7 @@
 
 .header-name {
   font-size: 30px;
-  color: #2c7cff;
+  color: #ffffbb;
   text-decoration: none;
 }
 
@@ -15,7 +15,7 @@
 .room-name a {
   font-size: 24px;
   text-decoration: none;
-  color: #2c7cff;
+  color: #ffffbb;
 }
 .chat {
   background-color: #FFFFdd;

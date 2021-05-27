@@ -24,7 +24,8 @@
     <%= f.submit "ログイン", class: 'action-btn' %>
   </div>
 <% end %>
+  <%= link_to "ユーザー登録がまだの方はこちら", new_user_registration_path, class: 'action-btn' %>
 </div>
 
 <%#= render "devise/shared/links" %>
-<%= render "shared/footer" %>
+<%= render "shared/third-footer" %>

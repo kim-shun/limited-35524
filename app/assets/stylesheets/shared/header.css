@@ -41,7 +41,7 @@
 
 .logout {
   text-decoration: none;
-  color:#2c7cff;
+  color:#ffffbb;
   font-size: 24px;
 }
 
@@ -49,12 +49,12 @@
   text-decoration: none;
   /* line-height: 32px; */
   margin-right: 3vw;
-  color: #2c7cff;
+  color: #ffffbb;
   font-size: 24px;
 }
 
 .sign-up {
   text-decoration: none;
-  color: #2c7cff;
+  color: #ffffbb;
   font-size: 24px;
 }

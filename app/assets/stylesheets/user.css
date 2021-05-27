@@ -31,6 +31,7 @@ h2 {
   font-weight: bold;
   font-size: 20px;
   margin-top: 30px;
+  text-decoration: none;
 }
 
 .field {
@@ -72,11 +73,15 @@ span {
 
 .user__wrapper{
   min-height: calc(100vh - 161px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .table{
   border-collapse: collapse;
   margin-bottom: 32px;
-  width: 50%;
+  width: 80%;
 }
 .table__col1{
   text-align: left;
@@ -84,7 +89,7 @@ span {
   background: #fafafa;
   border-collapse: collapse;
   border: 1px solid #f5f5f5;
-  width: 30%;
+  width: 40%;
   padding: 8px;
 }
 .table__col2{
