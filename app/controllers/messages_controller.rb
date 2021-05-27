@@ -6,8 +6,10 @@ class MessagesController < ApplicationController
   end
 
   def create
+    #binding.pry
     @room = Room.find(params[:room_id])
     @message = @room.messages.new(message_params)
+    # render json:{ message: @message }
     if @message.save
       redirect_to room_messages_path(@room)
     else
