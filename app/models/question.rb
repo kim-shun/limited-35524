@@ -25,7 +25,7 @@ class Question < ApplicationRecord
     validates :improve_id
   end
 
-  with_options numericality: { other_than: 1 } do
+  with_options numericality: { other_than: 1, message: 'を選択してください。'} do
     validates :philosophy_id
     validates :color_id
     validates :my_type_id
