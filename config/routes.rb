@@ -12,9 +12,4 @@ Rails.application.routes.draw do
   resources :rooms, only: [:index, :new, :create, :destroy] do
     resources :messages, only: [:index, :create]
   end
-
-  put 'users/follow/:user_id',to: 'users#follow'
-  put 'users/unfollow/:user_id',to: 'users#unfollow'
-  get 'users/follow_list/:user_id',to: 'users#follow_list'
-  get 'users/follower_list/:user_id',to:'users#follower_list'
 end

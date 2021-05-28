@@ -55,4 +55,3 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 gem 'active_hash'
 gem 'pry-rails'
-gem "acts_as_follower", github: "tcocca/acts_as_follower"
