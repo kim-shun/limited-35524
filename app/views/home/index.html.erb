@@ -23,24 +23,26 @@
   <br>
 <% end %>
 <br>
-<div class="form-field">
-  <div class="user__wrapper">
-    <h2 class="page-heading">
-      ユーザー
-    </h2>
-    <div class="users">
-      <table class="home-table">
-        <tbody>
-          <% @users.each do |user| %>
-            <tr>
-              <td class="home-table__col2"><%= link_to user.nickname, user_path(user.id), class: "home-user" %></td>
-            </tr>
-          <% end %>
-        </tbody>
-      </table>
+<% if @users.length != 0 %>
+  <div class="form-field">
+    <div class="user__wrapper">
+      <h2 class="page-heading">
+        ユーザー
+      </h2>
+      <div class="users">
+        <table class="home-table">
+          <tbody>
+            <% @users.each do |user| %>
+              <tr>
+                <td class="home-table__col2"><%= link_to user.nickname, user_path(user.id), class: "home-user" %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
-</div>
+<% end %>
 
       
 

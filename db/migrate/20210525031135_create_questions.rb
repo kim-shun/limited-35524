@@ -7,7 +7,7 @@ class CreateQuestions < ActiveRecord::Migration[6.0]
       t.integer    :like_type_id      , null: false
       t.integer    :prefecture_id     , null: false
       t.integer    :food_id           , null: false
-      t.integer    :hoby_id           , null: false
+      t.integer    :hobby_id           , null: false
       t.integer    :music_id          , null: false
       t.integer    :angry_id          , null: false
       t.integer    :improve_id        , null: false

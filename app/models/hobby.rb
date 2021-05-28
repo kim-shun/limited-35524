@@ -1,4 +1,4 @@
-class Hoby < ActiveHash::Base
+class Hobby < ActiveHash::Base
   self.data = [
     { id: 1, name: '--' },
     { id: 2, name: 'アニメ' },

@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 2021_05_26_091500) do
     t.integer "like_type_id", null: false
     t.integer "prefecture_id", null: false
     t.integer "food_id", null: false
-    t.integer "hoby_id", null: false
+    t.integer "hobby_id", null: false
     t.integer "music_id", null: false
     t.integer "angry_id", null: false
     t.integer "improve_id", null: false

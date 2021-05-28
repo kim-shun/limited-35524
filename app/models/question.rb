@@ -6,7 +6,7 @@ class Question < ApplicationRecord
   belongs_to :like_type
   belongs_to :prefecture
   belongs_to :food
-  belongs_to :hoby
+  belongs_to :hobby
   belongs_to :music
   belongs_to :angry
   belongs_to :improve
@@ -19,7 +19,7 @@ class Question < ApplicationRecord
     validates :like_type_id
     validates :prefecture_id
     validates :food_id
-    validates :hoby_id
+    validates :hobby_id
     validates :music_id
     validates :angry_id
     validates :improve_id
@@ -32,7 +32,7 @@ class Question < ApplicationRecord
     validates :like_type_id
     validates :prefecture_id
     validates :food_id
-    validates :hoby_id
+    validates :hobby_id
     validates :music_id
     validates :angry_id
     validates :improve_id
