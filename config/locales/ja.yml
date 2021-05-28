@@ -7,6 +7,8 @@ ja:
     models:
       user: ユーザー
       question: パーソナリティ情報
+      room: ルーム
+      message: メッセージ
     attributes:
       user:
         nickname: ニックネーム
@@ -21,5 +23,12 @@ ja:
         music_id: 好きな音楽
         angry_id: どんな時に怒るか
         improve_id: 改善したいこと
+      room:
+        name: ルーム名
+      message:
+        content: メッセージ
+        room: ルーム名
+        user: ユーザー
+
         
   
