@@ -2,3 +2,24 @@ ja:
   time:
     formats:
       default: "%Y/%m/%d %H:%M:%S"
+ja:
+  activerecord:
+    models:
+      user: ユーザー
+      question: パーソナリティ情報
+    attributes:
+      user:
+        nickname: ニックネーム
+      question:
+        philosophy_id: 理念
+        color_id: 好きな色
+        my_type_id: 自分の特性
+        like_type_id: 好きなタイプ
+        prefecture_id: 出身
+        food_id: 食べ物
+        hobby_id: 趣味
+        music_id: 好きな音楽
+        angry_id: どんな時に怒るか
+        improve_id: 改善したいこと
+        
+  
