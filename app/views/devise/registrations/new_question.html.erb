@@ -1,7 +1,9 @@
 <%= render "shared/second-header" %>
 <div class="form-field">
 <h2>パーソナリティー情報</h2>
- <span>限られた選択肢の中から最も自分に当てはまる項目を選んでください</span>
+ <span>限られた選択肢の中から最も自分に当てはまる項目を選んでください！</span>
+ <br>
+ <span>※選択肢多いです！</span>
 <%= form_for @question do |f| %>
   <%= render "devise/shared/error_messages", resource: @question %>
 
@@ -31,7 +33,7 @@
 
   <div class="field">
     <div class="weight-bold-text">
-      好きなタイプ
+      好きなタイプに近いのは？
       <span class="indispensable">必須</span>
     </div>
     <%= f.collection_select(:like_type_id, LikeType.all, :id, :name, {}, {class:"select-box", id:"like_type"}) %>
@@ -47,7 +49,7 @@
 
   <div class="field">
     <div class="weight-bold-text">
-      好きな食べ物
+      今1品だけ食べられるとしたら？
       <span class="indispensable">必須</span>
     </div>
     <%= f.collection_select(:food_id, Food.all, :id, :name, {}, {class:"select-box", id:"food"}) %>
@@ -55,7 +57,7 @@
 
   <div class="field">
     <div class="weight-bold-text">
-      趣味
+      趣味にするなら？/現在の趣味
       <span class="indispensable">必須</span>
     </div>
     <%= f.collection_select(:hobby_id, Hobby.all, :id, :name, {}, {class:"select-box", id:"hobby"}) %>
@@ -72,7 +74,7 @@
 
   <div class="field">
     <div class="weight-bold-text">
-      何にイライラするか
+      どんな時に怒る？
       <span class="indispensable">必須</span>
     </div>
     <%= f.collection_select(:angry_id, Angry.all, :id, :name, {}, {class:"select-box", id:"angry"}) %>
@@ -80,10 +82,17 @@
 
   <div class="field">
     <div class="weight-bold-text">
-      何を改善したいか
+      あなたが改善したいところは？
       <span class="indispensable">必須</span>
     </div>
     <%= f.collection_select(:improve_id, Improve.all, :id, :name, {}, {class:"select-box", id:"improve"}) %>
+  </div>
+
+  <div class="field">
+    <div class="weight-bold-text">
+      自由記入欄
+    </div>
+    <%= f.text_area :text, class:"user-text", id:"user-text", placeholder:"自由に記入してください" ,rows:"7" ,maxlength:"1000" %>
   </div>
 
   <div class="actions">

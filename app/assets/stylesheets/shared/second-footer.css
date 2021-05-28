@@ -2,6 +2,13 @@
   box-sizing: border-box;
 }
 
+.edit {
+  text-decoration: none;
+  color: #ffffbb;
+  font-size: 24px;
+  margin-left: 3vw;
+}
+
 .return-top {
   text-decoration: none;
   color: #ffffbb;

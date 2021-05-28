@@ -14,9 +14,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
        render :new and return
      end
     session["devise.regist_data"] = {user: @user.attributes}
-    #binding.pry
     session["devise.regist_data"][:user]["password"] = params[:user][:password]
-    #binding.pry
     @question = @user.build_question
     render :new_question
   end
@@ -36,7 +34,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   private
  
   def question_params
-    params.require(:question).permit(:philosophy_id, :color_id, :my_type_id, :like_type_id, :prefecture_id, :food_id, :hoby_id, :music_id, :angry_id, :improve_id)
+    params.require(:question).permit(:philosophy_id, :color_id, :my_type_id, :like_type_id, :prefecture_id, :food_id, :hobby_id, :music_id, :angry_id, :improve_id, :text)
   end
  
   # GET /resource/sign_up

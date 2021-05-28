@@ -11,6 +11,7 @@ class CreateQuestions < ActiveRecord::Migration[6.0]
       t.integer    :music_id          , null: false
       t.integer    :angry_id          , null: false
       t.integer    :improve_id        , null: false
+      t.text       :text
       t.references :user
       t.timestamps
     end

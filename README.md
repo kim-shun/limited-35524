@@ -31,6 +31,7 @@
 | music_id      | integer    | null: false |
 | angry_id      | integer    | null: false |
 | improve_id    | integer    | null: false |
+| text          | text       |             |
 | user          | references |             |
 
 ## Association

@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 2021_05_26_091500) do
     t.integer "music_id", null: false
     t.integer "angry_id", null: false
     t.integer "improve_id", null: false
+    t.text "text"
     t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

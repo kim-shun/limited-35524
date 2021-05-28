@@ -20,10 +20,11 @@ class UsersController < ApplicationController
     @like_type = @user.question.like_type.name
     @prefecture = @user.question.prefecture.name
     @food = @user.question.food.name
-    @hoby = @user.question.hoby.name
+    @hobby = @user.question.hobby.name
     @music = @user.question.music.name
     @angry = @user.question.angry.name
     @improve = @user.question.improve.name
+    @text = @user.question.text
   end
 
   private

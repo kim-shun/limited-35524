@@ -5,13 +5,10 @@
       </li> 
     </ul>
     <ul class='lists-right'>
-      <% if user_signed_in? %>
-        <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
-        <li><%= link_to "トップページに戻る", root_path, class: "return-top" %></li>
-      <% else %>
-        <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
-        <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
+      <% if user_signed_in? && current_user.nickname == @nickname %>
+        <li><%= link_to '編集', edit_user_path(current_user), class: "edit" %></li>
       <% end %>
+        <li><%= link_to "トップページに戻る", root_path, class: "return-top" %></li>
     </ul>
   </div>
 </footer>
