@@ -17,8 +17,8 @@
 <br>
 
 <% if user_signed_in? %>
-  <div class='room-url'>
-    <%= link_to "チャットルームへ", rooms_path, class: 'chat-room-btn' %>
+  <div class='room-url' id="room-url">
+    <%= link_to "チャットルームへ", rooms_path, class: 'chat-room-btn', id: 'chat-room-btn' %>
   </div>
   <br>
 <% end %>
