@@ -16,6 +16,16 @@
 </div>
 <br>
 
+<%# <h1>
+  ユーザー検索
+</h1>
+<%= search_form_for @p, url: questions_search_path do |f| %>
+  <%# <%= f.label :name_eq, 'ユーザー名' %>
+  <%# <%= f.collection_select :name_eq, @users, :nickname, :nickname,  include_blank: '指定なし' %>
+  <%# <br>
+  <%= f.submit '検索' %>
+<%# <% end %>
+
 <% if user_signed_in? %>
   <div class='room-url' id="room-url">
     <%= link_to "チャットルームへ", rooms_path, class: 'chat-room-btn', id: 'chat-room-btn' %>

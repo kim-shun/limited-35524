@@ -30,12 +30,13 @@ class Users::RegistrationsController < Devise::RegistrationsController
     session["devise.regist_data"]["user"].clear
     sign_in(:user, @user)
   end
- 
+  
   private
  
   def question_params
     params.require(:question).permit(:philosophy_id, :color_id, :my_type_id, :like_type_id, :prefecture_id, :food_id, :hobby_id, :music_id, :angry_id, :improve_id, :text)
   end
+ 
  
   # GET /resource/sign_up
   # def new

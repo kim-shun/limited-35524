@@ -5,7 +5,10 @@ Rails.application.routes.draw do
   }
   devise_scope :user do
     get 'questions', to: 'users/registrations#new_question'
+    #get 'questions/search', to: 'users/registrations#search_question'
     post 'questions', to: 'users/registrations#create_question'
+    # get 'questions/edit', to: 'users/registrations#edit_question'
+    # patch 'questions/update', to: 'users/registrations#update_question'
   end
   root to: "home#index"
   resources :users, only: [:edit, :update, :show]
