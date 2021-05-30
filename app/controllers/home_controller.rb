@@ -4,6 +4,7 @@ class HomeController < ApplicationController
 
   def index
     @users = User.all
+    set_user_column
   end
 
   def search
@@ -13,6 +14,10 @@ class HomeController < ApplicationController
   private
 
   def search_user
-    @p = User.ransack(params[:q])  # 検索オブジェクトを生成
+    @p = User.ransack(params[:q])
+  end
+
+  def set_user_column
+    @user_nickname = User.select("nickname").distinct
   end
 end

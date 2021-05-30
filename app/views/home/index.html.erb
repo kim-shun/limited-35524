@@ -16,16 +16,6 @@
 </div>
 <br>
 
-<h1>
-  ユーザー検索
-</h1>
-<%= search_form_for @p, url: home_search_path do |f| %>
-  <%= f.label :nickname_eq, 'ユーザー名' %>
-  <%= f.collection_select :nickname_eq, @users, :nickname, :nickname,  include_blank: '指定なし' %>
-  <br>
-  <%= f.submit '検索' %>
-<% end %>
-
 <% if user_signed_in? %>
   <div class='room-url' id="room-url">
     <%= link_to "チャットルームへ", rooms_path, class: 'chat-room-btn', id: 'chat-room-btn' %>
@@ -33,6 +23,18 @@
   <br>
 <% end %>
 <br>
+
+<h1>
+  ユーザー検索
+</h1>
+<%= search_form_for @p, url: home_search_path do |f| %>
+  <%= f.label :nickname_eq, 'ユーザー名' %>
+  <%= f.collection_select :nickname_eq, @user_nickname, :nickname, :nickname,  include_blank: '指定なし' %>
+  <br>
+  
+  <%= f.submit '検索' %>
+<% end %>
+
 <% if @users.length != 0 %>
   <div class="form-field">
     <div class="user__wrapper">
