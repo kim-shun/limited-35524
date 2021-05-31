@@ -24,17 +24,22 @@
 <% end %>
 <br>
 
-<h1>
-  ユーザー検索
-</h1>
-<%= search_form_for @p, url: home_search_path do |f| %>
-  <%= f.label :nickname_eq, 'ユーザー名' %>
-  <%= f.collection_select :nickname_eq, @user_nickname, :nickname, :nickname,  include_blank: '指定なし' %>
-  <br>
-  <%#= f.label :color_id_eq, '好きな色：' %>
-  <%#= f.collection_select :color_id_eq, Color.where.not(id: 1), :id, :name, include_blank: "理念検索", include_blank: '指定なし' %>
-  <br>
-  <%= f.submit '検索' %>
+<% if @users.length != 0 %>
+  <div class="form-field">
+    <h1>
+      ユーザー検索
+    </h1>
+    <br>
+    <%= search_form_for @p, url: home_search_path do |f| %>
+      <%= f.label :nickname_eq, 'ユーザー名：' %>
+      <%= f.collection_select :nickname_eq, @user_nickname, :nickname, :nickname,  include_blank: '指定なし' %>
+      <br>
+      <%#= f.label :color_id_eq, '好きな色：' %>
+      <%#= f.collection_select :color_id_eq, Color.where.not(id: 1), :id, :name, include_blank: "理念検索", include_blank: '指定なし' %>
+      <br>
+      <%= f.submit '検索', class:"search-btn" %>
+  <% end %>
+  </div>
 <% end %>
 
 <% if @users.length != 0 %>

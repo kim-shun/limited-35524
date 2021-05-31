@@ -1,3 +1,5 @@
+<%= render "shared/second-header" %>
+<br>
 <h1>
   検索結果
 </h1>
@@ -5,21 +7,68 @@
 <% if @results.length !=0 %>
   <% @results.each do |result| %>
     <br>
-    <li>
-      <%= result.nickname %>
-      <%= result.question.philosophy.name %>
-      <%= result.question.color.name %>
-      <%= result.question.my_type.name %>
-      <%= result.question.prefecture.name %>
-      <%= result.question.food.name %>
-      <%= result.question.hobby.name %>
-      <%= result.question.music.name %>
-      <%= result.question.angry.name %>
-      <%= result.question.improve.name %>
-    </li>
+    <div class="form-field">
+      <div class="user__wrapper">
+        <h2 class="page-heading">
+          <%= "#{result.nickname}さんの情報" %>
+        </h2>
+        <table class="table">
+          <tbody>
+            <tr>
+              <th class="table__col1">名前</th>
+              <td class="table__col2"><%= result.nickname %></td>
+            </tr>
+            <tr>
+              <th class="table__col1">理念</th>
+              <td class="table__col2"><%= result.question.philosophy.name %></td>
+            </tr>
+            <tr>
+              <th class="table__col1">好きな色</th>
+              <td class="table__col2"><%= result.question.color.name %></td>
+            </tr>
+            <tr>
+              <th class="table__col1">自分の特性</th>
+              <td class="table__col2"><%= result.question.my_type.name %></td>
+            </tr>
+            <tr>
+              <th class="table__col1">好きなタイプに近いのは？</th>
+              <td class="table__col2"><%= result.question.like_type.name %></td>
+            </tr>
+            <tr>
+              <th class="table__col1">出身</th>
+              <td class="table__col2"><%= result.question.prefecture.name %></td>
+            </tr>
+            <tr>
+              <th class="table__col1">今1品だけ食べられるとしたら？</th>
+              <td class="table__col2"><%= result.question.food.name %></td>
+            </tr>
+            <tr>
+              <th class="table__col1">趣味にするなら？/現在の趣味</th>
+              <td class="table__col2"><%= result.question.hobby.name %></td>
+            </tr>
+            <tr>
+              <th class="table__col1">好きな音楽</th>
+              <td class="table__col2"><%= result.question.music.name %></td>
+            </tr>
+            <tr>
+              <th class="table__col1">どんな時に怒る？</th>
+              <td class="table__col2"><%= result.question.angry.name %></td>
+            </tr>
+            <tr>
+              <th class="table__col1">あなたが改善したいところは？</th>
+              <td class="table__col2"><%= result.question.improve.name %></td>
+            </tr>
+            <tr>
+              <th class="table__col1">自由記入欄</th>
+              <td class="table__col2"><%= result.question.text %></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   <% end %>
 <% else %>
   該当するユーザーはいません
 <% end %>
 <br>
-<%= link_to 'トップページへ戻る', root_path %>
+<%= render "shared/second-footer" %>
