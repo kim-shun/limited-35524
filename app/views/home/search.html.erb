@@ -68,7 +68,13 @@
     </div>
   <% end %>
 <% else %>
+<h1>
   該当するユーザーはいません
+</h1>
 <% end %>
 <br>
+
+<%= link_to(new_room_path, class: 'room-btn') do %>
+  <span class='room-btn-text'>ルーム作成</span>
+<% end %>
 <%= render "shared/second-footer" %>

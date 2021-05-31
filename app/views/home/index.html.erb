@@ -34,38 +34,11 @@
       <%= f.label :nickname_eq, 'ユーザー名：' %>
       <%= f.collection_select :nickname_eq, @user_nickname, :nickname, :nickname,  include_blank: '指定なし' %>
       <br>
-      <%#= f.label :color_id_eq, '好きな色：' %>
-      <%#= f.collection_select :color_id_eq, Color.where.not(id: 1), :id, :name, include_blank: "理念検索", include_blank: '指定なし' %>
       <br>
       <%= f.submit '検索', class:"search-btn" %>
   <% end %>
   </div>
 <% end %>
-
-<% if @users.length != 0 %>
-  <div class="form-field">
-    <div class="user__wrapper">
-      <h2 class="page-heading">
-        ユーザー
-      </h2>
-      <div class="users">
-        <table class="home-table">
-          <tbody>
-            <% @users.each do |user| %>
-              <tr>
-                <td class="home-table__col2"><%= link_to user.nickname, user_path(user.id), class: "home-user" %></td>
-              </tr>
-            <% end %>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-<% end %>
-
-      
-
-
 
 <% if user_signed_in? %>
   <%= link_to(new_room_path, class: 'room-btn') do %>
