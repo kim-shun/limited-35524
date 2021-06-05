@@ -5,6 +5,7 @@ class HomeController < ApplicationController
   def index
     @users = User.all
     set_user_column
+    @ogiris = Ogiri.all
   end
 
   def new
