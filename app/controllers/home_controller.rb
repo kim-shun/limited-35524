@@ -7,6 +7,12 @@ class HomeController < ApplicationController
     set_user_column
   end
 
+  def new
+  end
+
+  def create
+  end
+
   def search
     @results = @p.result.includes(:question)
   end

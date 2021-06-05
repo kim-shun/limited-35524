@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   end
   root to: "home#index"
   get 'home/search'
+  resources :home, only: [:index, :new, :create]
   resources :users, only: [:edit, :update, :show]
   resources :rooms, only: [:index, :new, :create, :destroy] do
     resources :messages, only: [:index, :create]
