@@ -13,7 +13,8 @@ Rails.application.routes.draw do
   end
   root to: "home#index"
   get 'home/search'
-  resources :home, only: [:index, :new, :create, :show] do
+  resources :home, only: [:index, :new, :create, :show]
+  resources :ogiris, only: [:new] do
     resources :comments, only: [:new, :create]
   end
   resources :users, only: [:edit, :update, :show]

@@ -28,7 +28,7 @@ class HomeController < ApplicationController
   def show
     @ogiri = Ogiri.find(params[:id])
     @comment = Comment.new
-    @comments = Comment.all
+    @comments = @ogiri.comments.includes(:user)
   end
 
   private
