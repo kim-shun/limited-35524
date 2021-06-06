@@ -25,6 +25,12 @@ class HomeController < ApplicationController
     @results = @p.result.includes(:question)
   end
 
+  def show
+    @ogiri = Ogiri.find(params[:id])
+    @comment = Comment.new
+    @comments = Comment.all
+  end
+
   private
 
   def search_user

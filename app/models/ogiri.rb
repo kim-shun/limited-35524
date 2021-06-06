@@ -3,6 +3,7 @@ class Ogiri < ApplicationRecord
   belongs_to :first_text
   belongs_to :second_text
   belongs_to :user
+  has_many :comments
 
   with_options presence: true do
     validates :first_text_id

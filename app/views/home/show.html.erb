@@ -1,0 +1,20 @@
+<%= render "shared/second-header" %>
+<div class="form-field">
+  <h2 class="page-heading">
+    投稿者：<%= @ogiri.user.nickname %>
+  </h2>
+  <%= @ogiri.first_text.name %>
+  <%= @ogiri.text %>
+  <%= @ogiri.second_text.name %>
+
+  <%= form_with model: @comment, url: home_path do |f| %>
+    <%= f.text_field :text %>
+    <%= f.submit '送信' %>
+  <% end %>
+  <div id='messages'>
+    <% @comments.reverse_each do |comment| %>
+      <p><%= comment.text %></p>
+    <% end %>
+  </div>
+</div>
+<%= render "shared/second-footer" %>

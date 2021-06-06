@@ -9,5 +9,6 @@ class User < ApplicationRecord
   has_many :rooms, through: :room_users
   has_many :messages
   has_many :ogiris
+  has_many :comments
 
 end

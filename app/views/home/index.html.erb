@@ -49,8 +49,9 @@
       <%= ogiri.first_text.name %>
       <%= ogiri.text %>
       <%= ogiri.second_text.name %>
-
-      
+      <span>
+      <%= link_to "回答を見る", home_path(ogiri) %>
+      </span>
     </div>
   <% end %>
 <% end %>
