@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'comments/new'
   get 'messages/index'
   devise_for :users, controllers: {
     registrations: 'users/registrations'
@@ -12,7 +13,9 @@ Rails.application.routes.draw do
   end
   root to: "home#index"
   get 'home/search'
-  resources :home, only: [:index, :new, :create]
+  resources :home, only: [:index, :new, :create] do
+    resources :comments, only: [:new, :create]
+  end
   resources :users, only: [:edit, :update, :show]
   resources :rooms, only: [:index, :new, :create, :destroy] do
     resources :messages, only: [:index, :create]
