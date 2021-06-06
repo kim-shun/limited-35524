@@ -1,3 +1,9 @@
 <%= render "shared/second-header" %>
 <h1>投稿する</h1>
+<%= form_with model: @ogiri, url: home_index_path, local: true do |f| %>
+  <%= f.collection_select(:first_text_id, FirstText.all, :id, :name, {}, {class:"select-box", id:"first_text"}) %>
+  <%= f.text_area :text, placeholder: "text", rows: "1" %>
+  <%= f.collection_select(:second_text_id, SecondText.all, :id, :name, {}, {class:"select-box", id:"second_text"}) %>
+  <%= f.submit "SEND" %>
+<% end %>
 <%= render "shared/second-footer" %>

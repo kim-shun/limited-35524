@@ -26,8 +26,10 @@ ActiveRecord::Schema.define(version: 2021_06_05_230513) do
     t.string "text", null: false
     t.integer "first_text_id", null: false
     t.integer "second_text_id", null: false
+    t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_ogiris_on_user_id"
   end
 
   create_table "questions", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -78,6 +80,7 @@ ActiveRecord::Schema.define(version: 2021_06_05_230513) do
 
   add_foreign_key "messages", "rooms"
   add_foreign_key "messages", "users"
+  add_foreign_key "ogiris", "users"
   add_foreign_key "room_users", "rooms"
   add_foreign_key "room_users", "users"
 end

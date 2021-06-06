@@ -40,6 +40,15 @@
   </div>
 <% end %>
 
+<% if @ogiris.length != 0 %>
+  <% @ogiris.each do |ogiri| %>
+    <%= ogiri.user.nickname %>
+    <%= ogiri.first_text.name %>
+    <%= ogiri.text %>
+    <%= ogiri.second_text.name %>
+  <% end %>
+<% end %>
+
 <% if user_signed_in? %>
   <%= link_to(new_home_path, class: 'room-btn') do %>
     <span class='room-btn-text'>投稿する</span>

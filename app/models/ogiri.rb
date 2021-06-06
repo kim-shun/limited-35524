@@ -2,6 +2,7 @@ class Ogiri < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :first_text
   belongs_to :second_text
+  belongs_to :user
 
   with_options presence: true do
     validates :first_text_id
