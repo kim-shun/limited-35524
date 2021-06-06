@@ -1,6 +1,11 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.title{
+  font-size: 60px;
+  font-family: 'Oswald', sans-serif;
+}
+
 .title-contents {
   width: 100vw;
   background-image: image-url('IMG_5024.jpeg');
@@ -18,9 +23,10 @@
 }
 .service-title{
   color:#ffffbb;
+  font-size: 6vh;
 }
 .service-explain {
-  font-size: 2.5vh;
+  font-size: 3.5vh;
   line-height: 40px;
   color:#ffffbb;
 }
