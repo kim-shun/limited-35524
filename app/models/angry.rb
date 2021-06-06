@@ -12,6 +12,7 @@ class Angry < ActiveHash::Base
     { id: 10, name: '不安定な気象現象' },
     { id: 11, name: '成果を出せない自分が不甲斐ない' },
     { id: 12, name: '何があっても怒らない' },
+    { id: 13, name: '理解済みのことを教えられる' }
   ]
 
   include ActiveHash::Associations

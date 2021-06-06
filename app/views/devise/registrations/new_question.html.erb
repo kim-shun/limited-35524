@@ -33,7 +33,7 @@
 
   <div class="field">
     <div class="weight-bold-text">
-      好きなタイプに近いのは？
+      好きなタイプから最も遠いのは？
       <span class="indispensable">必須</span>
     </div>
     <%= f.collection_select(:like_type_id, LikeType.all, :id, :name, {}, {class:"select-box", id:"like_type"}) %>
@@ -74,7 +74,7 @@
 
   <div class="field">
     <div class="weight-bold-text">
-      どんな時に怒る？
+      どんな時に腹が立つ？
       <span class="indispensable">必須</span>
     </div>
     <%= f.collection_select(:angry_id, Angry.all, :id, :name, {}, {class:"select-box", id:"angry"}) %>
