@@ -42,10 +42,16 @@
 
 <% if @ogiris.length != 0 %>
   <% @ogiris.each do |ogiri| %>
-    <%= ogiri.user.nickname %>
-    <%= ogiri.first_text.name %>
-    <%= ogiri.text %>
-    <%= ogiri.second_text.name %>
+    <div class="form-field">
+      <h2 class="page-heading">
+        投稿者：<%= ogiri.user.nickname %>
+      </h2>
+      <%= ogiri.first_text.name %>
+      <%= ogiri.text %>
+      <%= ogiri.second_text.name %>
+
+      
+    </div>
   <% end %>
 <% end %>
 
