@@ -33,9 +33,12 @@
 .user-nickname {
   text-decoration: none;
   margin-right: 3vw;
-  color: #333333;
+  color: #2c7cff;
+  background-color: #ffffbb;
   font-weight: bold;
   font-size: 24px;
+  border-radius: 100px;
+  padding:20px 40px;
 }
 
 

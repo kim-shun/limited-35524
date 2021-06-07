@@ -1,7 +1,7 @@
 <%= render "shared/second-header" %>
 <div class="comment-form-field">
   <h2 class="page-heading">
-    投稿者：<%= @ogiri.user.nickname %>
+    投稿者：<%=link_to @ogiri.user.nickname, user_path(@ogiri.user), class:"ogiri-name" %>
   </h2>
   お題：
   <%= @ogiri.first_text.name %>

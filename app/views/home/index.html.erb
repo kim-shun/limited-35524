@@ -47,7 +47,7 @@
   <% @ogiris.each do |ogiri| %>
     <div class="form-field">
       <h2 class="page-heading">
-        投稿者：<%= ogiri.user.nickname %>
+        投稿者：<%=link_to ogiri.user.nickname, user_path(ogiri.user), class:"ogiri-name" %>
       </h2>
       <div class="theme">
         <%= ogiri.first_text.name %>
