@@ -1,0 +1,56 @@
+.post{
+  margin-top: 40px;
+}
+
+.new-ogiri {
+  width: 780px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 20px;
+  color: #2c7cff;
+}
+
+.ogiri-contents{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.select-box-one{
+  width: 350px;
+  height: 30px;
+  background-color: #f5f5f5;
+  margin-bottom: 15px;
+}
+
+.free-text{
+  width: 350px;
+  height: 30px;
+  margin-bottom: 15px;
+}
+
+.select-box-two{
+  width: 350px;
+  height: 30px;
+  background-color: #f5f5f5;
+  margin-bottom: 15px;
+}
+
+.post-btn {
+  line-height: 48px;
+  background-color: #ffffbb;
+  border: 1px solid #ffffbb;
+  color: #2c7cff;
+  width: 40px;
+  min-width: 150px;
+  font-size: 18px;
+  border-radius: 100px;
+  font-weight: bold;
+  margin-top: 50px;
+}
