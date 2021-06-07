@@ -49,11 +49,13 @@
       <h2 class="page-heading">
         投稿者：<%= ogiri.user.nickname %>
       </h2>
-      <%= ogiri.first_text.name %>
-      <%= ogiri.text %>
-      <%= ogiri.second_text.name %>
-      <span>
-      <%= link_to "回答を見る", home_path(ogiri.id) %>
+      <div class="theme">
+        <%= ogiri.first_text.name %>
+        <%= ogiri.text %>
+        <%= ogiri.second_text.name %>
+      </div>
+      <span class="answer">
+      <%= link_to "回答を見る", home_path(ogiri.id), class:"go-answer" %>
       </span>
     </div>
   <% end %>
