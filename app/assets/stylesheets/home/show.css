@@ -1,3 +1,18 @@
+.comment-form-field {
+  width: 870px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  color: #2c7cff;
+}
+
 .comment-box {
   width: 65vw;
   background-color: #fff;
