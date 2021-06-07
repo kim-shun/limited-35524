@@ -40,12 +40,21 @@
   border-radius: 100px;
   padding:20px 40px;
 }
+.user-nickname:hover {
+  background-color: aquamarine;
+}
 
 
 .logout {
   text-decoration: none;
   color:#ffffbb;
   font-size: 24px;
+}
+
+.logout:hover{
+  background-color: aquamarine;
+  color: #2c7cff;
+  border-radius: 100px;
 }
 
 .login {
@@ -56,8 +65,20 @@
   font-size: 24px;
 }
 
+.login:hover{
+  background-color: aquamarine;
+  color: #2c7cff;
+  border-radius: 100px;
+}
+
 .sign-up {
   text-decoration: none;
   color: #ffffbb;
   font-size: 24px;
+}
+
+.sign-up:hover{
+  background-color: aquamarine;
+  color: #2c7cff;
+  border-radius: 100px;
 }

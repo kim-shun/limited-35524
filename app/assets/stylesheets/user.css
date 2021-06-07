@@ -34,6 +34,10 @@ h2 {
   text-decoration: none;
 }
 
+.action-btn:hover{
+  background-color: aquamarine;
+}
+
 .field {
   float: left;
   width: 100%;
@@ -112,6 +116,7 @@ span {
 
 .page-heading{
   text-decoration: none;
-  color: #ff2cae;
+  color: #2c7cff;
 }
+
 

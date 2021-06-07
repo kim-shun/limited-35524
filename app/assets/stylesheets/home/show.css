@@ -1,6 +1,11 @@
 .ogiri-name{
   text-decoration: none;
-  color: #ff2cae;
+  color: #2c7cff;
+  border-radius: 100px;
+  padding:15px 25px;
+}
+.ogiri-name:hover{
+  background-color: aquamarine;
 }
 
 .comment-form-field {
@@ -45,6 +50,9 @@
   font-size: 18px;
   border-radius: 100px;
   margin-bottom: 40px;
+}
+#comment-btn:hover{
+  background-color: aquamarine;
 }
 
 #comments {

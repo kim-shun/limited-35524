@@ -140,6 +140,9 @@
   color: #2c7cff;
   border: 1px solid #2c7cff;
 }
+.search-btn:hover{
+  background-color: aquamarine;
+}
 
 .theme{
   font-size: 30px;
@@ -159,5 +162,9 @@
   border-radius: 100px;
   margin-bottom: 40px;
   padding: 20px 40px;
+}
+
+.go-answer:hover{
+  background-color: aquamarine;
 }
 

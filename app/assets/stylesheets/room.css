@@ -140,6 +140,10 @@ select {
   border: 1px solid #2c7cff;
 }
 
+.room-btn:hover{
+  background-color: aquamarine;
+}
+
 .room-btn-text {
   color: #2c7cff;
   display: block;
@@ -165,5 +169,9 @@ select {
   font-weight: bold;
   font-size: 20px;
   border: 1px solid #2c7cff;
+}
+
+.chat-room-btn:hover{
+  background-color: aquamarine;
 }
 
