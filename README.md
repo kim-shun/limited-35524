@@ -1,6 +1,55 @@
 # README
 
-# テーブル設計
+# アプリケーション名
+ Ogi-Limited
+
+# アプリケーションの概要
+
+# URL
+https://limited-35524.herokuapp.com/
+
+# テスト用アカウント
+
+## Basic認証
+- ユーザー名： admin
+- パスワード： 2222
+
+## テストユーザー
+- メールアドレス： test@com
+- パスワード： test10com
+
+# 利用方法
+
+# 目指した課題解決
+
+# 洗い出した要件
+
+| 機能                        | 目的           | 詳細            | ユースケース |
+| ーーーーーーーーーーーーーーーー | ーー---------- | ーー------------|
+| ウィザード形式のユーザー管理機能 |
+| アクティブハッシュ             |
+| 大喜利投稿機能                |
+| 大喜利回答機能                |
+| ユーザー詳細ページ             |
+| ユーザー検索機能               |
+| エラーメッセージの日本語化       |
+| ルーム機能                    |
+| チャット機能                  |
+
+
+
+# 実装した機能
+
+# 工夫したポイント
+
+# 実装予定の機能
+- いいね機能
+- フレンド機能
+- パーソナリティ情報の編集機能
+- 通知機能
+- チャットの非同期通信化
+
+# データベース設計
 
 ## users テーブル
 
@@ -111,3 +160,24 @@
 ## Association
 - belongs_to :ogiri
 - belongs_to :user
+
+
+# ローカルでの動作方法
+
+% git clone https://github.com/kim-shun/limited-35524.git  
+% cd morning-routine
+% bundle install
+% rails db:create
+% rails db:migrate
+% rails s
+ → http://localhost:3000
+
+
+ # 開発環境
+
+- フロントエンド：HTML/CSS/JavaScript/Ajax
+- バックエンド：Ruby on Rails(6.0.0)/Ruby(2.6.5)/JavaScript
+- テスト：RSpec
+- データベース：MySQL/Sequel Pro
+- インフラ：Heroku
+- タスク管理：GitHub/Trello
