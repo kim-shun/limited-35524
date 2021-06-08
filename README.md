@@ -24,17 +24,17 @@ https://limited-35524.herokuapp.com/
 
 # 洗い出した要件
 
-| 機能                        | 目的           | 詳細            | ユースケース |
-| ーーーーーーーーーーーーーーーー | ーー---------- | ーー------------|
+| 機能 | 目的 | 詳細 | ユースケース |
+| :---- | :---- | :----| :---- |
 | ウィザード形式のユーザー管理機能 |
-| アクティブハッシュ             |
-| 大喜利投稿機能                |
-| 大喜利回答機能                |
-| ユーザー詳細ページ             |
-| ユーザー検索機能               |
-| エラーメッセージの日本語化       |
-| ルーム機能                    |
-| チャット機能                  |
+| アクティブハッシュ |
+| 大喜利投稿機能 |
+| 大喜利回答機能 |
+| ユーザー詳細ページ |
+| ユーザー検索機能 |
+| エラーメッセージの日本語化 |
+| ルーム機能 |
+| チャット機能 |
 
 
 
@@ -164,13 +164,13 @@ https://limited-35524.herokuapp.com/
 
 # ローカルでの動作方法
 
-% git clone https://github.com/kim-shun/limited-35524.git  
-% cd morning-routine
-% bundle install
-% rails db:create
-% rails db:migrate
-% rails s
- → http://localhost:3000
+- % git clone https://github.com/kim-shun/limited-35524.git  
+- % cd morning-routine
+- % bundle install
+- % rails db:create
+- % rails db:migrate
+- % rails s
+- → http://localhost:3000
 
 
  # 開発環境
