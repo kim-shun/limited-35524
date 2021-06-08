@@ -2,9 +2,11 @@
 <h1 class="post">お題</h1>
 <div class="new-ogiri">
     <%= form_with model: @ogiri, url: home_index_path, local: true do |f| %>
+    <%= render 'shared/error_messages', model: f.object %>
+    <br>
       <div class="ogiri-contents">
         <%= f.collection_select(:first_text_id, FirstText.all, :id, :name, {}, {class:"select-box-one", id:"first_text"}) %>
-        <%= f.text_area :text, placeholder: "自由解答欄", rows: "1", class:"free-text" %>
+        <%= f.text_area :text, placeholder: "自由回答欄", rows: "1", class:"free-text" %>
         <%= f.collection_select(:second_text_id, SecondText.all, :id, :name, {}, {class:"select-box-two", id:"second_text"}) %>
         <%= f.submit "投稿", class:"post-btn" %>
       </div>

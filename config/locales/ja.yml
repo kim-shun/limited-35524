@@ -29,6 +29,10 @@ ja:
         content: メッセージ
         room: ルーム名
         user: ユーザー
+      ogiri:
+        text: 自由回答欄
+        first_text_id: 文頭のテキスト 
+        second_text_id: 末尾のテキスト
 
         
   
