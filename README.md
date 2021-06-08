@@ -30,7 +30,7 @@ https://limited-35524.herokuapp.com/
 - チャット機能  
 　ルームを作成した後、「チャットルームへ」をクリックして、さらにサイドバーに表示されているチャット名をクリックすることでチャットができるようになる。
 - ユーザー検索機能  
-　トップページの検索フォームからプルダウンで表示されるユーザー名を選択して「検索する」をクリックするとユーザーの詳細が見られるようになる。
+　トップページの検索フォームからプルダウンで表示されるユーザー名を選択して「検索する」をクリックするとユーザーの詳細が見られるようになる。。
 
 
 # 目指した課題解決
@@ -68,7 +68,7 @@ https://limited-35524.herokuapp.com/
 ## 大喜利回答機能
 [![Image from Gyazo](https://i.gyazo.com/d2e17f2fa5100148459b05d015dd02b6.gif)](https://gyazo.com/d2e17f2fa5100148459b05d015dd02b6)
 ## ユーザー詳細ページ
-[![Image from Gyazo](https://i.gyazo.com/330b90aa1f43d4ecaa31ccb9abe19da2.gif)](https://gyazo.com/330b90aa1f43d4ecaa31ccb9abe19da2)
+[![Image from Gyazo](https://i.gyazo.com/e16587e83660e3df49ff93006f29ec90.gif)](https://gyazo.com/e16587e83660e3df49ff93006f29ec90)
 ## ユーザー検索機能
 [![Image from Gyazo](https://i.gyazo.com/dc672bb5cc62c912dec24d0c76bf2623.gif)](https://gyazo.com/dc672bb5cc62c912dec24d0c76bf2623)
 ## ルーム機能
