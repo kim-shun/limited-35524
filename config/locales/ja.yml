@@ -12,6 +12,7 @@ ja:
     attributes:
       user:
         nickname: ニックネーム
+        email: メールアドレス
       question:
         philosophy_id: 理念
         color_id: 好きな色

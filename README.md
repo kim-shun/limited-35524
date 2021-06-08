@@ -39,6 +39,23 @@ https://limited-35524.herokuapp.com/
 
 
 # 実装した機能
+- ウィザード形式のユーザー管理機能
+[![Image from Gyazo](https://i.gyazo.com/ec1b8a1b00901d5cb98172d48a14a103.png)](https://gyazo.com/ec1b8a1b00901d5cb98172d48a14a103)
+[![Image from Gyazo](https://i.gyazo.com/eb83a131b653495905eb0473d2068fac.gif)](https://gyazo.com/eb83a131b653495905eb0473d2068fac)
+- 大喜利投稿機能
+[![Image from Gyazo](https://i.gyazo.com/e0741842a281794563de2c1747218486.gif)](https://gyazo.com/e0741842a281794563de2c1747218486)
+- 大喜利回答機能
+[![Image from Gyazo](https://i.gyazo.com/d2e17f2fa5100148459b05d015dd02b6.gif)](https://gyazo.com/d2e17f2fa5100148459b05d015dd02b6)
+- ユーザー詳細ページ
+[![Image from Gyazo](https://i.gyazo.com/330b90aa1f43d4ecaa31ccb9abe19da2.gif)](https://gyazo.com/330b90aa1f43d4ecaa31ccb9abe19da2)
+- ユーザー検索機能
+[![Image from Gyazo](https://i.gyazo.com/dc672bb5cc62c912dec24d0c76bf2623.gif)](https://gyazo.com/dc672bb5cc62c912dec24d0c76bf2623)
+- ルーム機能
+[![Image from Gyazo](https://i.gyazo.com/06f7aa3c05a186935e81deadc9361e4d.gif)](https://gyazo.com/06f7aa3c05a186935e81deadc9361e4d)
+- チャット機能
+[![Image from Gyazo](https://i.gyazo.com/cd0be4a60feaaa87329bb15a66c5b712.gif)](https://gyazo.com/cd0be4a60feaaa87329bb15a66c5b712)
+- エラーメッセージの日本語化
+[![Image from Gyazo](https://i.gyazo.com/521396df5d8b950052d75f86396bd83e.gif)](https://gyazo.com/521396df5d8b950052d75f86396bd83e)
 
 # 工夫したポイント
 
