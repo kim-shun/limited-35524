@@ -13,7 +13,8 @@ class Food < ActiveHash::Base
     { id: 11, name: 'チーズケーキ' },
     { id: 12, name: 'ざるそば' },
     { id: 13, name: 'チキン南蛮' },
-    { id: 14, name: 'アボカド' }
+    { id: 14, name: 'アボカド' },
+    { id: 15, name: '唐揚げ' }
   ]
 
   include ActiveHash::Associations

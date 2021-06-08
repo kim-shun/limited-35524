@@ -16,12 +16,12 @@ ja:
         philosophy_id: 理念
         color_id: 好きな色
         my_type_id: 自分の特性
-        like_type_id: 好きなタイプ
+        like_type_id: 好きなタイプになりにくいタイプ
         prefecture_id: 出身
         food_id: 食べ物
         hobby_id: 趣味
         music_id: 好きな音楽
-        angry_id: どんな時に怒るか
+        angry_id: どんな時に腹が立つか
         improve_id: 改善したいこと
       room:
         name: ルーム名
