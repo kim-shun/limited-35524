@@ -1,9 +1,10 @@
 # README
 
 # アプリケーション名
- Ogi-Limited
+## Ogi-Limited(オーギリミテッド)
 
 # アプリケーションの概要
+大喜利投稿と回答ができるアプリ。ユーザーのパーソナリティ情報を閲覧できるのが特徴。
 
 # URL
 https://limited-35524.herokuapp.com/
@@ -21,6 +22,12 @@ https://limited-35524.herokuapp.com/
 # 利用方法
 
 # 目指した課題解決
+  　解決したい課題は「他者を理解するコストを減らすこと」である。
+  　日本には、間違いを過度に恐れ、自分をひけらかすことを恥じる文化があると感じている。その文化によって、本来は誰もが自分を理解してもらうことに大きな喜びを感じる一方で、理解や間違いを恐れやすくなっているのではないだろうか。
+  　例えば大学の講義では、講師に当てられることを恐れて多くの人が教室の後ろの方に座ることを好んだり、挙手を求めても誰も手を挙げなかったりする場面を多く見かける。
+  　では解決策として何が挙げられるかを考えたところ、「選択肢の提示」があるのではないだろうか。漠然と何が食べたいかを聞くよりも、カレーとうどんだったらどちらを食べたいかを聞いた方が、聞き手の恐れや考えるコストが減る。またそれがベストな回答でなくとも、ベターな回答から、他者が求めていることのバイアスを推し量ることができる。
+  　「選択肢の提示」から派生して僕が感じていた課題をもう１つ挙げると、世の中に出回っている「アンケートの選択肢がステレオタイプすぎる」ということである。アンケートはデータを収集する上で貴重な資料であるはずだが、僕はこれまで惰性で回答したことしかない。
+  　前置きが長くなったが、アクティブハッシュとユーモラスなアプリの設計を利用して、他者を理解するコストを減らすことができないかを模索してみた。
 
 # 洗い出した要件
 
@@ -39,22 +46,24 @@ https://limited-35524.herokuapp.com/
 
 
 # 実装した機能
-- ウィザード形式のユーザー管理機能
+## ウィザード形式のユーザー管理機能
+- ユーザー登録の1ページ目
 [![Image from Gyazo](https://i.gyazo.com/ec1b8a1b00901d5cb98172d48a14a103.png)](https://gyazo.com/ec1b8a1b00901d5cb98172d48a14a103)
+- ユーザー登録の2ページ目
 [![Image from Gyazo](https://i.gyazo.com/eb83a131b653495905eb0473d2068fac.gif)](https://gyazo.com/eb83a131b653495905eb0473d2068fac)
-- 大喜利投稿機能
+## 大喜利投稿機能
 [![Image from Gyazo](https://i.gyazo.com/e0741842a281794563de2c1747218486.gif)](https://gyazo.com/e0741842a281794563de2c1747218486)
-- 大喜利回答機能
+## 大喜利回答機能
 [![Image from Gyazo](https://i.gyazo.com/d2e17f2fa5100148459b05d015dd02b6.gif)](https://gyazo.com/d2e17f2fa5100148459b05d015dd02b6)
-- ユーザー詳細ページ
+## ユーザー詳細ページ
 [![Image from Gyazo](https://i.gyazo.com/330b90aa1f43d4ecaa31ccb9abe19da2.gif)](https://gyazo.com/330b90aa1f43d4ecaa31ccb9abe19da2)
-- ユーザー検索機能
+## ユーザー検索機能
 [![Image from Gyazo](https://i.gyazo.com/dc672bb5cc62c912dec24d0c76bf2623.gif)](https://gyazo.com/dc672bb5cc62c912dec24d0c76bf2623)
-- ルーム機能
+## ルーム機能
 [![Image from Gyazo](https://i.gyazo.com/06f7aa3c05a186935e81deadc9361e4d.gif)](https://gyazo.com/06f7aa3c05a186935e81deadc9361e4d)
-- チャット機能
+## チャット機能
 [![Image from Gyazo](https://i.gyazo.com/cd0be4a60feaaa87329bb15a66c5b712.gif)](https://gyazo.com/cd0be4a60feaaa87329bb15a66c5b712)
-- エラーメッセージの日本語化
+## エラーメッセージの日本語化
 [![Image from Gyazo](https://i.gyazo.com/521396df5d8b950052d75f86396bd83e.gif)](https://gyazo.com/521396df5d8b950052d75f86396bd83e)
 
 # 工夫したポイント
