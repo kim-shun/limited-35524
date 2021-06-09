@@ -46,7 +46,7 @@
 }
 .messages {
   background-color: #ffffdd;
-  height: calc(100vh - 100px - 90px);
+  height: calc(1000px - 100px - 90px);
   padding: 46px 40px 0;
   overflow: scroll;
 }
