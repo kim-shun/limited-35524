@@ -15,24 +15,26 @@
   height:170vh;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  padding: 5vh 15vw;
+  padding: 5vh 5vw;
   color: #fff;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
   margin-top: 20px;
 }
 .service-title{
   color:#ffffbb;
-  font-size: 65px;
+  font-size: 6vh;
   margin-bottom: 100px;
 }
+
 .service-explain {
-  font-size: 36px;
+  font-size: 3vh;
   line-height: 40px;
   color:#ffffbb;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
+
 
 
 .room-url{
