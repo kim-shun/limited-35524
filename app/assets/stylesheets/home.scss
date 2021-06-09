@@ -12,7 +12,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
-  height:250vh;
+  height:200vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -24,47 +24,14 @@
 }
 .service-title{
   color:#ffffbb;
-  font-size: 14vh;
+  font-size: 10vh;
   margin-bottom: 100px;
 }
 .service-explain {
-  font-size: 7vh;
+  font-size: 5vh;
   line-height: 40px;
   color:#ffffbb;
-  margin-bottom: 20px;
-}
-
-//  /* スマホ表示時 */
- @media (max-width: 599px) {
-
-  .title-contents {
-    width: 210vw;
-    background-image: image-url('IMG_5024.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
-    height:150vh;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 5vh 15vw;
-    color: #fff;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
-    margin-top: 20px;
-  }
-
-  .service-title{
-    color:#ffffbb;
-    font-size: 7vh;
-    margin-bottom: 100px;
-  }
-  .service-explain {
-    font-size: 4vh;
-    line-height: 40px;
-    color:#ffffbb;
-  }
-
+  margin-bottom: 100px;
 }
 
 
