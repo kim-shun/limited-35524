@@ -9,14 +9,13 @@ class SecondText < ActiveHash::Base
     { id: 7, name: 'の特徴は？' },
     { id: 8, name: '理由とは？' },
     { id: 9, name: 'なぜ？' },
-    { id: 10, name: 'どんなアボカド？' },
-    { id: 11, name: 'どんな使い方？' },
-    { id: 12, name: '何を気をつける？' },
-    { id: 13, name: '秘密を教えてください' },
-    { id: 14, name: '方法とは？' },
-    { id: 15, name: 'デメリットは？' },
-    { id: 16, name: 'の口癖は？' },
-    { id: 17, name: '65位は？' }
+    { id: 10, name: 'どんな使い方？' },
+    { id: 11, name: '何を気をつける？' },
+    { id: 12, name: '秘密を教えてください' },
+    { id: 13, name: '方法とは？' },
+    { id: 14, name: 'デメリットは？' },
+    { id: 15, name: 'の口癖は？' },
+    { id: 16, name: '65位は？' }
   ]
 
   include ActiveHash::Associations
