@@ -1,6 +1,7 @@
 <%= render "shared/second-header" %>
 <h1 class="post">お題</h1>
 <div class="new-ogiri">
+<span>※センシティブな内容を含まないように自由回答欄に注意を払ってください</span>
     <%= form_with model: @ogiri, url: home_index_path, local: true do |f| %>
     <%= render 'shared/error_messages', model: f.object %>
     <br>

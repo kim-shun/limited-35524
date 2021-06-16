@@ -10,6 +10,7 @@
   <br>
   <div class="comment-box">
     <% if user_signed_in?%>
+    <span>※センシティブな内容を含まないように回答に注意を払ってください</span>
       <%= form_with model: [@ogiri, @comment]  do |f| %>
         <%= f.text_field :text, id: "comment-text" %>
         <%= f.submit '回答する', id: "comment-btn" %>
